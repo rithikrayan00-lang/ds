@@ -3,72 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>Airport Runway Simulator</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background: #e8f1ff;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: #0078ff;
+            background: #004aad;
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 38px;
         }
 
         .container {
             max-width: 900px;
             margin: 30px auto;
-            background: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
         }
 
-        h1, h2 {
-            margin-top: 0;
+        h2 {
+            color: #004aad;
+            border-left: 5px solid #007bff;
+            padding-left: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+            color: #333;
+        }
+
+        ul {
+            font-size: 16px;
         }
 
         footer {
-            background: #222;
+            background: #004aad;
             color: white;
-            padding: 10px;
+            padding: 12px;
             text-align: center;
             margin-top: 40px;
         }
+
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Welcome to My GitHub Pages Website</h1>
+    <h1>Airport Runway Simulator</h1>
+    <p>A Python-based aviation scheduling and simulation project</p>
 </header>
 
 <div class="container">
-    <h2>Project Status</h2>
+    <h2>Project Overview</h2>
     <p>
-        This website is hosted using GitHub Pages.  
-        Your HTML file is now running successfully!
+        The Airport Runway Simulator is a Python-based system that simulates aircraft landing and take-off operations 
+        on a single or multiple runways. It models real-time airport behavior using scheduling algorithms, queue 
+        management, event handling, and safety separation rules. The simulation helps analyze delays, queue length, 
+        runway utilization, and emergency handling efficiency.
     </p>
 
-    <h2>About</h2>
+    <h2>Key Features</h2>
+    <ul>
+        <li>Simulates landing and take-off sequences</li>
+        <li>Supports FCFS and Priority scheduling algorithms</li>
+        <li>Emergency aircraft handling</li>
+        <li>Real-time simulation with event logging</li>
+        <li>Visualization of runway usage and queue movement</li>
+        <li>Performance metrics such as waiting time and utilization</li>
+    </ul>
+
+    <h2>Architecture Summary</h2>
     <p>
-        You can add more content here, such as project details, images, links, or documentation.
+        The system architecture includes modular components such as Aircraft Generator, Event Queue, Scheduler Module, 
+        Runway Manager, Simulation Clock, and Visualization Layer. Aircraft requests enter the system through the 
+        generator, are scheduled by the scheduler, and processed through the runway manager before results are displayed 
+        visually.
     </p>
 
-    <h2>Repository Link</h2>
-    <p>
-        <a href="#">Click here to go to the GitHub repository</a>
-    </p>
+    <h2>Source Code</h2>
+    <p>You can view the full Python project in this repository:</p>
+    <p><a href="#" id="repoLink">Click here to open the GitHub Repository</a></p>
+
+    <script>
+        // Auto-detect and link to repository
+        document.getElementById("repoLink").href = window.location.origin;
+    </script>
+
 </div>
 
 <footer>
-    © 2025 My GitHub Pages Site
+    © 2025 Airport Runway Simulator | Developed in Python
 </footer>
 
 </body>
